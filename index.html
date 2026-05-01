@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>House Price Predictor</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<div class="main">
+
+    <!-- LEFT: FORM -->
+    <div class="card">
+        
+        <h1>🏠 </h1>
+            <h1>House Price Prediction On Kolkata</h1>
+
+        <input type="number" id="area" placeholder="Area (sq ft)">
+        <input type="number" id="bedrooms" placeholder="Bedrooms">
+        <input type="number" id="age" placeholder="Age of House">
+
+        <select id="location">
+            <option value="">Select Location</option>
+            <option value="saltlake">Salt Lake</option>
+            <option value="newtown">New Town</option>
+            <option value="parkstreet">Park Street</option>
+            <option value="garia">Garia</option>
+            <option value="howrah">Howrah</option>
+             <option value="Khardah">Khardah</option>
+              <option value="Sodhpur">Sodhpur</option>
+               <option value="Barracpur">Barracpur</option>
+  <option value="Maddhymgram">Maddhymgram</option>
+        </select>
+
+        <button onclick="predictPrice()">Predict Price</button>
+
+        <h2 id="result"></h2>
+    </div>
+
+    <!-- RIGHT: CHART -->
+    <div class="chart-box">
+        <canvas id="priceChart"></canvas>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
